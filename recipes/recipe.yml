@@ -59,9 +59,7 @@ modules:
         - fastfetch
         - fish
         - nvim
-  - type: script
-    snippets:
-        - "chsh -s /usr/bin/fish"
+
 #    remove:
 #      packages:
         # example: removing firefox (in favor of the flatpak)

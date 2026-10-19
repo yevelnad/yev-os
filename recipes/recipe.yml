@@ -19,6 +19,9 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - type: dnf
+    rpmfusion:
+        - free
+        - non-free
     repos:
       copr:
         - atim/starship
@@ -33,12 +36,20 @@ modules:
         - git
         - podman
         - distrobox
-#    remove:
-#      packages:
-#        # example: removing firefox (in favor of the flatpak)
-#        # "firefox" is the main package, "firefox-langpacks" is a dependency
-#        - firefox
-#        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+        - fastfetch
+        - zed
+        - ffmpeg
+        - intel-media-driver
+        - "@multimedia"
+      exclude:
+        - PackageKit-gstreamer-plugin
+    remove:
+      packages:
+        # example: removing firefox (in favor of the flatpak)
+        # "firefox" is the main package, "firefox-langpacks" is a dependency
+        - ffmpeg-free
+        #- firefox
+        #- firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 #
 #  - type: default-flatpaks
 #    configurations:

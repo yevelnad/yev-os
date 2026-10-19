@@ -6,8 +6,8 @@ name: yev-os
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-#base-image: ghcr.io/ublue-os/silverblue-main
-base-image: quay.io/fedora/fedora-silverblue
+base-image: ghcr.io/ublue-os/silverblue-main
+#base-image: quay.io/fedora/fedora-silverblue
 image-version: latest # You can pin to a specific version of Fedora as well
 
 # module configuration, executed in order
@@ -22,25 +22,25 @@ modules:
       nonfree: rpmfusion
     install:
       packages:
-        - ffmpeg
+#        - ffmpeg
         - intel-media-driver
-        - gstreamer1-plugin-libav
-        - gstreamer1-plugins-bad-free-extras
-        - gstreamer1-plugins-bad-freeworld
-        - gstreamer1-plugins-ugly
-        - gstreamer1-vaapi
-    remove:
-      packages:
-        - fdk-aac-free
-        - libavcodec-free
-        - libavdevice-free
-        - libavfilter-free
-        - libavformat-free
-        - libavutil-free
-        - libpostproc-free
-        - libswresample-free
-        - libswscale-free
-        - ffmpeg-free
+#        - gstreamer1-plugin-libav
+#        - gstreamer1-plugins-bad-free-extras
+#        - gstreamer1-plugins-bad-freeworld
+#        - gstreamer1-plugins-ugly
+#        - gstreamer1-vaapi
+#    remove:
+#      packages:
+#        - fdk-aac-free
+#        - libavcodec-free
+#        - libavdevice-free
+#        - libavfilter-free
+#        - libavformat-free
+#        - libavutil-free
+#        - libpostproc-free
+#        - libswresample-free
+#        - libswscale-free
+#        - ffmpeg-free
   - type: dnf
     repos:
       copr:
@@ -48,8 +48,6 @@ modules:
         - lionheartp/Hyprland
     install:
       packages:
-        - firefox
-        - gdm
         - micro
         - starship
         - noctalia
@@ -59,6 +57,11 @@ modules:
         - podman
         - distrobox
         - fastfetch
+        - fish
+        - nvim
+  - type: script
+    snippets:
+        - "chsh -s /usr/bin/fish"
 #    remove:
 #      packages:
         # example: removing firefox (in favor of the flatpak)

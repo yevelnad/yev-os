@@ -24,8 +24,23 @@ modules:
       packages:
         - ffmpeg
         - intel-media-driver
-      allow-erasing: true
-
+        - gstreamer1-plugin-libav
+        - gstreamer1-plugins-bad-free-extras
+        - gstreamer1-plugins-bad-freeworld
+        - gstreamer1-plugins-ugly
+        - gstreamer1-vaapi
+    remove:
+      packages:
+        - fdk-aac-free
+        - libavcodec-free
+        - libavdevice-free
+        - libavfilter-free
+        - libavformat-free
+        - libavutil-free
+        - libpostproc-free
+        - libswresample-free
+        - libswscale-free
+        - ffmpeg-free
   - type: dnf
     repos:
       copr:

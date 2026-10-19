@@ -17,9 +17,15 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-  - type: bling
+  - type: dnf
+    repos:
+      nonfree: rpmfusion
     install:
-      - rpmfusion
+      packages:
+        - ffmpeg
+        - intel-media-driver
+      allow-erasing: true
+
   - type: dnf
     repos:
       copr:
@@ -37,17 +43,12 @@ modules:
         - distrobox
         - fastfetch
         - zed
-        - ffmpeg
-        - intel-media-driver
-        - "@multimedia"
       exclude:
         - PackageKit-gstreamer-plugin
-    remove:
-      packages:
+#    remove:
+#      packages:
         # example: removing firefox (in favor of the flatpak)
         # "firefox" is the main package, "firefox-langpacks" is a dependency
-        - ffmpeg-free
-        - libswscale-free
         #- firefox
         #- firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 #

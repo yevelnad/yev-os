@@ -48,6 +48,7 @@ modules:
         - lionheartp/Hyprland
     install:
       packages:
+        - firefox
         - gdm
         - micro
         - starship

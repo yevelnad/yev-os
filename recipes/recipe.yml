@@ -58,8 +58,6 @@ modules:
         - distrobox
         - fastfetch
         - zed
-      exclude:
-        - PackageKit-gstreamer-plugin
 #    remove:
 #      packages:
         # example: removing firefox (in favor of the flatpak)

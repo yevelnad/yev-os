@@ -48,6 +48,7 @@ modules:
         - lionheartp/Hyprland
     install:
       packages:
+        - gdm
         - micro
         - starship
         - noctalia

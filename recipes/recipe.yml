@@ -61,6 +61,7 @@ modules:
         - fish
         - nvim
         - obs-studio
+        - kdenlive
 
 #    remove:
 #      packages:

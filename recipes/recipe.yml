@@ -53,7 +53,8 @@ modules:
       packages:
         - micro
         - starship
-        - noctalia
+        # NOTE: the COPR package was renamed from `noctalia` to `noctalia-git`
+        - noctalia-git
         - hyprland
         - hyprland-guiutils
         - git
@@ -62,7 +63,6 @@ modules:
         - fastfetch
         - fish
         - nvim
-        - steam
 
 #    remove:
 #      packages:

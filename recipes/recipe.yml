@@ -49,7 +49,6 @@ modules:
       copr:
         - atim/starship
         - lionheartp/Hyprland
-        - reanimator/gdm-settings
     install:
       packages:
         - micro
@@ -63,7 +62,6 @@ modules:
         - fastfetch
         - fish
         - nvim
-        - gdm-settings
         - steam
 
 #    remove:

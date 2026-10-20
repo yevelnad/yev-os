@@ -24,6 +24,7 @@ modules:
       packages:
 #        - ffmpeg
         - intel-media-driver
+        - steam
 #        - gstreamer1-plugin-libav
 #        - gstreamer1-plugins-bad-free-extras
 #        - gstreamer1-plugins-bad-freeworld
@@ -59,6 +60,7 @@ modules:
         - fastfetch
         - fish
         - nvim
+        - obs-studio
 
 #    remove:
 #      packages:

@@ -47,6 +47,7 @@ modules:
       copr:
         - atim/starship
         - lionheartp/Hyprland
+        - reanimator/gdm-settings
     install:
       packages:
         - micro
@@ -61,7 +62,8 @@ modules:
         - fish
         - nvim
         - obs-studio
-        - kdenlive
+        - gdm-settings
+        - steam
 
 #    remove:
 #      packages:

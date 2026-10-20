@@ -61,7 +61,6 @@ modules:
         - fish
         - nvim
         - obs-studio
-        - steam
 
 #    remove:
 #      packages:

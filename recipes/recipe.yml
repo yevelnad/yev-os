@@ -24,8 +24,8 @@ modules:
       packages:
 #        - ffmpeg
         - intel-media-driver
+        - libva-intel-driver
         - libva-utils
-        - obs-studio
 #        - steam
 #        - gstreamer1-plugin-libav
 #        - gstreamer1-plugins-bad-free-extras
@@ -54,7 +54,7 @@ modules:
         - micro
         - starship
         # NOTE: the COPR package was renamed from `noctalia` to `noctalia-git`
-        - noctalia-git
+        - noctalia
         - hyprland
         - hyprland-guiutils
         - git

@@ -37,6 +37,11 @@ modules:
         - fastfetch
         - fish
         - nvim
+        - qt6-qtsvg
+        - qt6-qtvirtualkeyboard
+        - qt6-qtmultimedia
+        - qt6-qtimageformats
+
 
 #    remove:
 #      packages:

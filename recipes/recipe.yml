@@ -25,7 +25,7 @@ modules:
         - lionheartp/Hyprland
     install:
       packages:
-        - sddm
+        - gdm
         - nautilus
         - firefox
         - micro
@@ -37,11 +37,7 @@ modules:
         - fastfetch
         - fish
         - nvim
-        - qt6-qtsvg
-        - qt6-qtvirtualkeyboard
-        - qt6-qtmultimedia
-        - qt6-qtimageformats
-
+        - loupe
 
 #    remove:
 #      packages:

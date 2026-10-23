@@ -38,6 +38,16 @@ modules:
         - fish
         - nvim
         - loupe
+  - type: dnf
+    repos:
+      files:
+        add:
+          - repo/terra.repo
+    install:
+      packages:
+        - umbriel-nightly
+        - noctalia-greeter
+
 
 #    remove:
 #      packages:

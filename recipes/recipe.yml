@@ -38,11 +38,9 @@ modules:
         - fish
         - nvim
         - loupe
-  - type: dnf
-    repos:
-      files:
-        add:
-          - repo/terra.repo
+
+  - type: script
+    snippets: "sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release terra-gpg-keys"
     install:
       packages:
         - umbriel-nightly

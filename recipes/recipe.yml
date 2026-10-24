@@ -40,7 +40,9 @@ modules:
         - loupe
 
   - type: script
-    snippets: "sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release terra-gpg-keys"
+    snippets:
+        - "sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release terra-gpg-keys"
+  - type: dnf
     install:
       packages:
         - umbriel-nightly

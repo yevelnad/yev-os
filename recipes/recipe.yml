@@ -39,10 +39,10 @@ modules:
         - nvim
         - loupe
 
-  - type: script
-    snippets:
-        - sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release terra-gpg-keys
   - type: dnf
+    repos:
+      files:
+        - terra.repo
     install:
       packages:
         - umbriel-nightly

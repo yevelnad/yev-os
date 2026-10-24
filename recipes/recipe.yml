@@ -25,7 +25,7 @@ modules:
         - lionheartp/Hyprland
     install:
       packages:
-        - gdm
+        - sddm
         - nautilus
         - firefox
         - micro

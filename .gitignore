@@ -1,5 +1,6 @@
 cosign.key
 cosign.private
+recipes/umbriel.yml.bak
 /Containerfile
 *.iso
 *.iso-CHECKSUM

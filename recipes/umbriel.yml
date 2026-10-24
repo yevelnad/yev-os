@@ -1,15 +1,24 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-name: yes-os-umbriel
-description: This is my personal image with umbriel.
+# image will be published to ghcr.io/<user>/<name>
+name: yev-os-umbriel
+# description will be included in the image's metadata
+description: This is my personal OS image.
+
+# the base image to build on top of (FROM) and the version tag to use
+#base-image: ghcr.io/ublue-os/silverblue-main
 base-image: quay.io/fedora-ostree-desktops/base-atomic
-image-version: 44
+#base-image: quay.io/fedora/fedora-silverblue
+image-version: 45 # You can pin to a specific version of Fedora as well
+
+# module configuration, executed in order
+# you can include multiple instances of the same module
 modules:
   - type: files
     files:
       - source: system
-        destination: /
-  - from-file: base/umbriel.yml
-  - from-file: base/applications.yml
+        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+  - from-file: base/terra.yml
   - from-file: base/rpmfusion.yml
-  - type: signing
+  - from-file: base/applications.yml
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully

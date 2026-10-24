@@ -38,9 +38,6 @@ modules:
         - fish
         - nvim
         - loupe
-  - type: script
-    scripts:
-      - terra.sh
 
 
 

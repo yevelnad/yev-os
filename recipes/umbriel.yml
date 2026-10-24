@@ -1,0 +1,13 @@
+name: yes-os-umbriel
+discription: This is my personal image with umbriel.
+base-image: quay.io/fedora-ostree-desktops/base-atomic
+image-version: 44
+modules:
+  - type: files
+    files:
+      - source: system
+        destination: /
+  - from-file: base/umbriel.yml
+  - from-file: base/applications.yml
+  - from-file: base/rpmfusion.yml
+  - type: signing

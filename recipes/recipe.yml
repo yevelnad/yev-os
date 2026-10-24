@@ -43,6 +43,10 @@ modules:
     repos:
       files:
         - terra.repo
+  - type: script
+    snippets:
+      - dnf install terra-gpg-keys
+  - type: dnf
     install:
       packages:
         - umbriel-nightly

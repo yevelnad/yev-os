@@ -6,6 +6,6 @@
 set -oue pipefail
 
 # Your code goes here.
-sudo dnf install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
-sudo dnf instal -y noctalia-greeter
-sudo dnf install -y umbriel-nightly
+dnf install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
+dnf instal -y noctalia-greeter
+dnf install -y umbriel-nightly

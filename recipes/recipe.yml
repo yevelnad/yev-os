@@ -41,7 +41,7 @@ modules:
 
   - type: script
     snippets:
-        - "sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release terra-gpg-keys"
+        - sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release terra-gpg-keys
   - type: dnf
     install:
       packages:

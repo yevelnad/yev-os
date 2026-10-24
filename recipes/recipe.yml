@@ -45,7 +45,7 @@ modules:
         - terra.repo
   - type: script
     snippets:
-      - dnf install terra-gpg-keys
+      - dnf install -y terra-gpg-keys
   - type: dnf
     install:
       packages:

@@ -38,11 +38,6 @@ modules:
         - fish
         - nvim
         - loupe
-
-  - type: dnf
-    repos:
-      files:
-        - terra.repo
   - type: script
     scripts:
       - terra.sh

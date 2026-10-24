@@ -1,0 +1,8 @@
+modules:
+  repos:
+    copr:
+      - lionheartp/Hyprland
+  install:
+    packages:
+      - hyprland
+      - hyprland-guiutils

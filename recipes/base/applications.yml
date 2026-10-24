@@ -1,0 +1,9 @@
+modules:
+  - type: dnf
+    install:
+      packages:
+        - fastfetch
+        - git
+        - noctalia
+        - fish
+        - nvim

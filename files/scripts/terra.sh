@@ -6,5 +6,6 @@
 set -oue pipefail
 
 # Your code goes here.
-echo 'This is an example shell script'
-echo 'Scripts here will run during build if specified in recipe.yml'
+sudo dnf install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
+sudo dnf instal -y noctalia-greeter
+sudo dnf install -y umbriel-nightly

@@ -44,13 +44,9 @@ modules:
       files:
         - terra.repo
   - type: script
-    snippets:
-      - yes | dnf install terra-gpg-keys
-  - type: dnf
-    install:
-      packages:
-        - umbriel-nightly
-        - noctalia-greeter
+    scripts:
+      - terra.sh
+
 
 
 #    remove:

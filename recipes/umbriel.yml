@@ -20,6 +20,9 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
   - from-file: base/applications.yml
+  - from-file: base/rpmfusion.yml
   - from-file: base/terra.yml
-
+  - type: os-release
+    properties:
+        PRETTY_NAME: Yevbriel - OS on umbriel
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

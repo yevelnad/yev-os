@@ -22,6 +22,7 @@ modules:
   - from-file: base/applications.yml
   - from-file: base/rpmfusion.yml
   - from-file: base/terra.yml
+  - from-file: base/flatpak.yml
   - type: os-release
     properties:
         PRETTY_NAME: Yevbriel - OS on umbriel

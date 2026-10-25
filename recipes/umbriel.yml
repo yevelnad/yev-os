@@ -14,6 +14,7 @@ image-version: 45 # You can pin to a specific version of Fedora as well
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - from-file: base/kargs.yml
   - type: files
     files:
       - source: system

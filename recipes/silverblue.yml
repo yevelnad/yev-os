@@ -14,6 +14,7 @@ image-version: 45 # You can pin to a specific version of Fedora as well
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - from-file: base/kargs.yml
   - type: files
     files:
       - source: system
@@ -21,4 +22,5 @@ modules:
   - from-file: base/rpmfusion.yml
   - from-file: base/applications.yml
   - from-file: base/copr.yml
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

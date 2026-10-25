@@ -13,6 +13,5 @@ modules:
   - from-file: base/silverblue.yml
   - from-file: base/rpmfusion.yml
   - from-file: base/applications.yml
-  - from-file: base/post-build.yml
 
   - type: signing

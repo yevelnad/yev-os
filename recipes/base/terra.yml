@@ -1,16 +1,8 @@
 modules:
-  - type: dnf
-    install:
-      packages:
-        - nautilus
-        - dolphin
-        - firefox
-        - ffmpegthumbnailer
-        - ffmpegthumbs
   - type: script
     snippets:
       - sudo dnf install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
       - sudo dnf install -y umbriel-nightly
-      - sudo dnf install -y sddm
-      - sudo systemctl enable sddm
+      - sudo dnf install -y gdm @base-x gnome-shell nautilus ptyxis ffmpegthumbnailer
+      - sudo systemctl enable gdm
       - sudo systemctl set-default graphical.target

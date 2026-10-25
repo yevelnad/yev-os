@@ -1,4 +1,11 @@
 modules:
+  - type: dnf
+    packages:
+      isntall:
+        - nautilus
+        - dolphin
+        - firefox
+
   - type: script
     snippets:
       - sudo dnf install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release

@@ -7,3 +7,27 @@ modules:
         - fish
         - nvim
         - distrobox
+    remove:
+      auto-remove: false
+      packages:
+        - fedora-flathub-remote
+        - fedora-third-party
+        - fedora-workstation-repositories
+    replace:
+      # mitigate upstream packaging bug: https://bugzilla.redhat.com/show_bug.cgi?id=2332429
+      # swap the incorrectly installed OpenCL-ICD-Loader for ocl-icd, the expected package
+      - from-repo: fedora
+        install-weak-deps: false
+        packages:
+          - new: ocl-icd
+            old: OpenCL-ICD-Loader
+  - type: systemd
+    system:
+      masked:
+        - rpm-ostreed-automatic.timer
+      enabled:
+        - bootc-fetch-apply-updates.timer
+        - flatpak-system-updates.timer
+    user:
+      enabled:
+        - flatpak-user-updates.timer

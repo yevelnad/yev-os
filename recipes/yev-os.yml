@@ -12,5 +12,4 @@ modules:
     files:
       - source: system
         destination: /
-  - from-file: base/post-build.yml
   - type: signing

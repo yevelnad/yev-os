@@ -3,11 +3,3 @@ modules:
     snippets:
       - sudo dnf install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
       - sudo dnf install -y umbriel-nightly
-  - type: dnf
-    install:
-      packages:
-        - sddm
-        - qt6-qtsvg
-        - qt6-qtvirtualkeyboard
-        - qt6-qtmultimedia
-        - qt6-qtimageformats

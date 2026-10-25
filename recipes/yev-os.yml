@@ -10,7 +10,9 @@ modules:
     - source: system
       destination: /
   - from-file: base/kargs.yml
+  - from-file: base/silverblue
   - from-file: base/rpmfusion.yml
   - from-file: base/applications.yml
+  - from-file: base/post-build.yml
 
   - type: signing

@@ -6,10 +6,11 @@ base-image: quay.io/fedora/fedora-silverblue
 image-version: latest
 modules:
   - from-file: base/kargs.yml
+  - from-file: base/rpmfusion.yml
+  - from-file: base/applications.yml
   - type: files
     files:
       - source: system
         destination: /
-      - from-file: base/rpmfusion.yml
-      - from-file: base/applications.yml
+  - from-file: base/post-build.yml
   - type: signing

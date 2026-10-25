@@ -22,5 +22,5 @@ modules:
   - from-file: base/rpmfusion.yml
   - from-file: base/applications.yml
   - from-file: base/copr.yml
-
+  - from-file: base/post-build.yml
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

@@ -9,7 +9,7 @@ description: This is my personal OS image.
 #base-image: ghcr.io/ublue-os/silverblue-main
 base-image: quay.io/fedora-ostree-desktops/silverblue
 #base-image: quay.io/fedora/fedora-silverblue
-image-version: 45 # You can pin to a specific version of Fedora as well
+image-version: latest # You can pin to a specific version of Fedora as well
 
 # module configuration, executed in order
 # you can include multiple instances of the same module

@@ -1,0 +1,15 @@
+name: yev-os-silverblue
+description: This is my personal image with updated graphics.
+base-image: quay.io/fedora/fedora-silverblue
+image-version: latest
+
+modules:
+  - from-file: base/kargs.yml
+
+  - type: files
+    files:
+      - source: system
+        destination: /
+      - from-file: base/rpmfusion.yml
+      - from-file: base/applications.yml
+  - type: signing

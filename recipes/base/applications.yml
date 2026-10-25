@@ -4,7 +4,6 @@ modules:
       packages:
         - fastfetch
         - git
-        - noctalia
         - fish
         - nvim
         - distrobox

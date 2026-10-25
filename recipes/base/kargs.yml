@@ -1,4 +1,4 @@
 modules:
-  - tpype: kargs
+  - type: kargs
     kargs:
       - rootflags=compress:zstd

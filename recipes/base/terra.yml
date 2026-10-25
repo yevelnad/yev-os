@@ -1,11 +1,12 @@
 modules:
   - type: dnf
     packages:
-      isntall:
+      install:
         - nautilus
         - dolphin
         - firefox
-
+        - ffmpegthumbnailer
+        - ffmpegthumbs
   - type: script
     snippets:
       - sudo dnf install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release

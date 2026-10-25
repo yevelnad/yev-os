@@ -3,3 +3,6 @@ modules:
     snippets:
       - sudo dnf install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
       - sudo dnf install -y umbriel-nightly
+      - sudo dnf install -y sddm
+      - sudo systemctl enable sddm
+      - sudo systemctl set-default graphical.target
